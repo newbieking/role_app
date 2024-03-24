@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: role_app
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root
+    username: root
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://192.168.211.128/role_app
+
+
+  main:
+    banner-mode: off
+  jpa:
+    database: mysql
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+server:
+  port: 8080
+
+jwt:
+  secretPath: ./secret/secret
+
+
+
+
